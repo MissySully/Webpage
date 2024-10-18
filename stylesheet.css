@@ -1,0 +1,35 @@
+/*Home Page*/ 
+.btn {background-color: 
+	#F7E7F5;color: #FFFBEF;
+	border: 3px dotted #FFFBEF;
+	padding: 12px; 
+	text-align: center;
+	text-decoration: none; 
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;}
+	
+.btn:hover {background-color: 
+	#FFFBEF;color: #F7E7F5;
+	border: 3px dotted #F7E7F5;}
+
+
+/*portfolio.html*/
+	
+.btn2 {background-color: #D5FEB8;
+	color: #FFFBEF;
+	border: 3px dotted #FFFBEF;
+	padding: 12px; 
+	text-align: center;
+	text-decoration: none; 
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;}
+	
+.btn2:hover {background-color: 
+	#FFFBEF;color: #D5FEB8;
+	border: 3px dotted #D5FEB8;}
