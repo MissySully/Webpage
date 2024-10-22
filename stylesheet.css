@@ -1,3 +1,23 @@
+/*Personal Font*/
+@font-face {font-family: 'dxlactos';
+			src: url('DxLactos-Regular-free-personal-use.otf');
+			font-weight: 300;
+			font-style: normal;}
+		
+		
+.myfont {font-family:dxlactos, Helvetica, sans-serif;
+		font-size: 40px;}
+.myfonta {font-family:dxlactos, Helvetica, sans-serif;
+		font-size: 20px;}
+
+a {text-decoration: none;}
+
+@font-face {font-family: "Poiret One", sans-serif;
+  font-weight: 300;
+  font-style: normal;}
+
+p,ul {font-family: "Poiret One", sans-serif;}
+
 /*Home Page*/ 
 .btn {background-color: 
 	#F7E7F5;color: #FFFBEF;
@@ -6,6 +26,7 @@
 	text-align: center;
 	text-decoration: none; 
 	display: inline-block;
+	font-family:dxlactos, Helvetica, sans-serif;
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
@@ -18,18 +39,118 @@
 
 /*portfolio.html*/
 	
-.btn2 {background-color: #D5FEB8;
-	color: #FFFBEF;
-	border: 3px dotted #FFFBEF;
+.btn2 {background-color: #FFFBEF;
+	color: #335145;
+	border: 3px dotted #335145;
 	padding: 12px; 
 	text-align: center;
 	text-decoration: none; 
 	display: inline-block;
-	font-size: 16px;
+	font-family:dxlactos, Helvetica, sans-serif;
+	font-size: 16px; 
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 12px;}
 	
-.btn2:hover {background-color: 
-	#FFFBEF;color: #D5FEB8;
-	border: 3px dotted #D5FEB8;}
+	
+.btn2:hover {background-color: #335145;
+	color: #FFFBEF;
+	border: 3px dotted #FFFBEF;}
+	
+.link-button { display: inline-block;    /* Align links horizontally */
+    margin-right: 10px;       /* Adds space between buttons */
+    padding: 10px 20px;       /* Adds padding to make them look like buttons */
+    text-decoration: none;    /* Removes underline */
+    border-radius: 12px;       /* Optional: Rounds the corners */
+    background-color: #6a8e7f;
+    border: 3px dotted #F7E7F5; /* Adds button background color */
+    color: white;             /* Text color */
+    transition: background-color 0.3s ease; /* Smooth color transition */}
+
+.link-button:hover {background-color: #335145; /* Changes background on hover */}
+
+	
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {max-width: 1000px;
+  position: relative;
+  margin: auto;}
+
+/* Hide the images by default */
+.mySlides {}
+
+/* Next & previous buttons */
+.prev, .next {cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius:8px;
+  user-select: none;}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #335145;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #6a8e7f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #335145;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
